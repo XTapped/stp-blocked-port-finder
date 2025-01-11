@@ -25,6 +25,9 @@ Great. Notice that the program gives you priorities as well as costs. You **must
 > [!NOTE]  
 > The script runs a simplified STP where link costs are symmetrical. However, this is not the case for real STP where the link costs are applied per switch. Therefore, if the script says the cost of S4 <-> S6 should be 32, you may need to try setting the cost for S4 and S6. As a general heuristic, **apply the cost to the switch *with* the blocked port.** For example, if the script states `Link S1 <-> S3: cost=32`, you must check the PDF and see which switch has the blocked port. If the blocked port is on S1, then you must configure the cost of 32 on S1, NOT ON S3.
 
+### I'm getting so many impossibles. That seems a bit odd?
+Remember that meme where the teacher trolls the students by making every answer as (A) in the MCQ section? The emergence of a pattern seems off to us, like we're doing something wrong, but if the script says that a topology is impossible, it probably is. Of course, you're free to try and crack it yourself. Nothing's stopping you.
+
 # Example
 ![image](https://github.com/user-attachments/assets/8e45b41b-7b2e-433e-9390-2d795aa027fa)
 
