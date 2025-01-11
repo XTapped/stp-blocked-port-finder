@@ -1,3 +1,6 @@
+> [!NOTE]  
+> This program assumes you are using Packet Tracer 8.X where you have access to the `span cost` command. 
+
 # What Is This?
 A small program to help you do Comp. Networks Lab 4. The program runs a simplified STP simulation and brute forces a bunch of costs until it stumbles upon the desired blocked ports configuration. Despite using a naive brute force approach, this program should run pretty fast actually since we're only trying 3 different possible costs (4,16,32).
 
