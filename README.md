@@ -51,4 +51,5 @@ S3 (blocked) -> S5
 Here are some commands that may help you.
 
 `en -> conf t -> span vlan 1 prio {PRIORITY}` - for configuring priority
+
 `en -> conf t -> int {PORT_NUM} -> span cost {COST}` - for setting the costs
