@@ -84,9 +84,6 @@ def main():
         print(
             "\nSolution found with default cost=4 on all links (and the assigned priorities)!"
         )
-        print("Blocked ports:")
-        for b in actual_blocked:
-            print(f"  {b[0]} (blocked) -> {b[1]}")
     else:
         solution_costs = find_solution_with_cost_assignments(
             topology, desired_blocked_list
