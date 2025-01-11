@@ -1,8 +1,8 @@
 Topology:
-S1 -> S0
-S1 -> S2
+S0 -> S1
 S0 -> S2
-S0 -> S3
+S1 -> S2
+S1 -> S3
 S2 -> S4
 S3 -> S4
 S3 -> S5
@@ -10,6 +10,6 @@ S4 -> S6
 S5 -> S6
 
 Desired Blocked Ports:
-S2 (blocked) -> S1
+S2 (blocked) -> S0
 S3 (blocked) -> S4
 S6 (blocked) -> S4
