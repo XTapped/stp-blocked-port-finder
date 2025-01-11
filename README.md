@@ -23,7 +23,7 @@ If you're 100% sure you typed in the topology and blocked ports correctly, then 
 Great. Notice that the program gives you priorities as well as costs. You **must** configure each switch to follow the priorities listed. After you're done with that, you may configure the costs. Note that `cost=4` is the default cost for a link in term 2430's topology. So, if everything is `cost=4` but one is `cost=16` then you only have to change the cost of that one link to 16.
 
 > [!NOTE]  
-> The script runs a simplified STP where link costs are symmetrical. However, this is not the case for real STP where the link costs are applied per switch. Therefore, if the script says the cost of S4 <-> S6 should be 32, you may need to try setting the cost for S4 and S6. As a general heuristic, **apply the cost to the switch *with* the blocked port.**
+> The script runs a simplified STP where link costs are symmetrical. However, this is not the case for real STP where the link costs are applied per switch. Therefore, if the script says the cost of S4 <-> S6 should be 32, you may need to try setting the cost for S4 and S6. As a general heuristic, **apply the cost to the switch *with* the blocked port.** For example, if the script states `Link S1 <-> S3: cost=32`, you must check the PDF and see which switch has the blocked port. If the blocked port is on S1, then you must configure the cost of 32 on S1, NOT ON S3.
 
 # Example
 ![image](https://github.com/user-attachments/assets/8e45b41b-7b2e-433e-9390-2d795aa027fa)
